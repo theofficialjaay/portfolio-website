@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Strategies | Juanielle Stone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<nav>
+  <h1><a href="index.html" class="logo-link">JS.</a></h1>
+  <div>
+    <a href="index.html" class="nav-link" id="home-link">Home</a>
+    <a href="audit.html" class="nav-link" id="audit-link">Audits</a>
+    <a href="strategies.html" class="nav-link" id="strategies-link">Strategies</a>
+    <a href="analytics.html" class="nav-link" id="analytics-link">Analytics</a>
+    <a href="contact.html" class="nav-link" id="contact-link">Contact</a>
+  </div>
+</nav>
+</header>
+
+<section>
+    <h1 class="section-title">Marketing Strategies</h1>
+    <p>
+        Here I showcase strategies I’ve developed or analyzed, including content planning,
+        campaign design, social media calendar frameworks, and audience segmentation insights.
+    </p>
+
+<section id="fenty-placeholder">
+  <h3 class="section-title">Fenty Strategy (Coming Soon)</h3>
+  <div class="card">
+  <img src="assets/images/fenty-placeholder.png" alt="Fenty Project Coming Soon" class="card-preview">
+  <h4>Fenty Project</h4>
+  <p>This section will showcase my upcoming digital marketing strategy project for Savage X Fenty, including audience insights, content planning, and campaign mockups.</p>
+  <a href="strategies.html#fenty-placeholder" class="btn">View Project</a>
+</div>
+</section>
+
+
+
+<footer>
+  <p>© 2026 Juanielle Stone | Portfolio website built by me using HTML & CSS & VSCode</p>
+</footer>
+
+<script>
+  const page = window.location.pathname.split("/").pop();
+  if(page.includes("index")) document.getElementById("home-link").classList.add("active");
+  if(page.includes("audit")) document.getElementById("audit-link").classList.add("active");
+  if(page.includes("strategies")) document.getElementById("strategies-link").classList.add("active");
+  if(page.includes("analytics")) document.getElementById("analytics-link").classList.add("active");
+  if(page.includes("contact")) document.getElementById("contact-link").classList.add("active");
+</script>
+
+</body>
+</html>

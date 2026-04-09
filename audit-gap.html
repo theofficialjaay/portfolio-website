@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GAP LinkedIn Audit | Juanielle Stone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<nav>
+  <h1><a href="index.html" class="logo-link">JS.</a></h1>
+  <div>
+    <a href="index.html" class="nav-link" id="home-link">Home</a>
+    <a href="audit.html" class="nav-link" id="audit-link">Audits</a>
+    <a href="strategies.html" class="nav-link" id="strategies-link">Strategies</a>
+    <a href="analytics.html" class="nav-link" id="analytics-link">Analytics</a>
+    <a href="contact.html" class="nav-link" id="contact-link">Contact</a>
+  </div>
+</nav>
+</header>
+
+  <a href="audit.html" class="btn">← Back to All Audits</a>
+<!-- CARDS -->
+
+  <div class="card-container">
+
+    <!-- Post 1 -->
+    <div class="card">
+      <a href="post1.html">
+      <img src="assets/images/post1preview.png" class="card-preview" alt="Post preview">
+      <h4>Beyond Fashion: Building a Brand that Aligns</h4>
+      <p><strong>Insight:</strong> Short preview of insight...</p>
+      <p><strong>Vision:</strong> Short preview of vision...</p>
+      <p><strong>Takeaway:</strong> Short preview of takeaway...</p>
+    </a>
+      <a href="post1.html" class="btn">Read More</a>
+      <a href="https://www.linkedin.com/pulse/beyond-fashion-building-brand-aligns-juanielle-stone-fswpc" target="_blank" class="btn">View Full Blog on LinkedIn
+      </a>
+    </div>
+
+    <!-- Post 2 -->
+    <div class="card">
+      <a href="post2.html">
+      <img src="assets/images/post2preview.png" class="card-preview" alt="Post preview">
+      <h4>Gap's Social Media Strategy</h4>
+      <p><strong>Insight:</strong> Short preview of insight...</p>
+      <p><strong>Vision:</strong> Short preview of vision...</p>
+      <p><strong>What Makes Me Different:</strong> Short preview...</p>
+    </a>
+      <a href="post2.html" class="btn">Read More</a>
+      <a href="https://www.linkedin.com/pulse/gaps-social-media-strategy-juanielle-stone-fswpc" target="_blank" class="btn">View Full Blog on LinkedIn</a>
+    </div>
+
+    <!-- Post 3 -->
+    <div class="card">
+      <a href="post3.html">
+      <img src="assets/images/post3preview.png" class="card-preview" alt="Post preview">
+      <h4>Beyond Fashion: Another Perspective</h4>
+      <p><strong>Insight:</strong> Short preview...</p>
+      <p><strong>Vision:</strong> Short preview...</p>
+      <p><strong>What Makes Me Different:</strong> Short preview...</p>
+      </a>
+      <a href="post3.html" class="btn">Read More</a>
+      <a href="https://www.linkedin.com/pulse/beyond-fashion-another-perspective-juanielle-stone-fswpc" target="_blank" class="btn">View Full Blog on LinkedIn</a>
+    </div>
+
+    <!-- Post 4 -->
+    <div class="card">
+      <a href="post4.html">
+      <img src="assets/images/post4preview.png" class="card-preview" alt="Post preview">
+      <h4>@Gap on X (Twitter)</h4>
+      <p><strong>Insight:</strong> Short preview...</p>
+      <p><strong>Vision:</strong> Short preview...</p>
+      <p><strong>What Makes Me Different:</strong> Short preview...</p>
+      </a>
+      <a href="post4.html" class="btn">Read More</a>
+      <a href="https://www.linkedin.com/pulse/gaps-social-media-strategy-juanielle-stone-fswpc" target="_blank" class="btn">View Full Blog on LinkedIn</a>
+    </div>
+
+    <!-- Post 5 -->
+    <div class="card">
+      <a href="post5.html">
+      <img src="assets/images/post5preview.png" class="card-preview" alt="Post preview">
+      <h4>@Gap on LinkedIn</h4>
+      <p><strong>Insight:</strong> Short preview...</p>
+      <p><strong>Vision:</strong> Short preview...</p>
+      <p><strong>What Makes Me Different:</strong> Short preview...</p>
+      </a>
+      <a href="post5.html" class="btn">Read More</a>
+      <a href="https://www.linkedin.com/pulse/gaps-social-media-strategy-juanielle-stone-fswpc" target="_blank" class="btn">View Full Blog on LinkedIn</a>
+    </div>
+
+    <!-- Post 6 -->
+    <div class="card">
+      <a href="post6.html">
+      <img src="assets/images/post6preview.png" class="card-preview" alt="Post preview">
+      <h4>@Gap on YouTube</h4>
+      <p><strong>Insight:</strong> Short preview...</p>
+      <p><strong>Vision:</strong> Short preview...</p>
+      <p><strong>What Makes Me Different:</strong> Short preview...</p>
+      </a>
+      <a href="post6.html" class="btn">Read More</a>
+      <a href="https://www.linkedin.com/pulse/gaps-social-media-strategy-juanielle-stone-fswpc" target="_blank" class="btn">View Full Blog on LinkedIn</a>
+    </div>
+
+  </div>
+</section>
+
+  <footer>
+    <p>© 2026 Juanielle Stone | Built with HTML, CSS & VSCode</p>
+  </footer>
+
+<script>
+  const page = window.location.pathname.split("/").pop();
+  if(page.includes("index")) document.getElementById("home-link").classList.add("active");
+  if(page.includes("audit")) document.getElementById("audit-link").classList.add("active");
+  if(page.includes("strategies")) document.getElementById("strategies-link").classList.add("active");
+  if(page.includes("analytics")) document.getElementById("analytics-link").classList.add("active");
+  if(page.includes("contact")) document.getElementById("contact-link").classList.add("active");
+</script>
+
+</body>
+</html>

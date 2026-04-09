@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get In Touch | Juanielle Stone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<nav>
+  <h1><a href="index.html" class="logo-link">JS.</a></h1>
+  <div>
+    <a href="index.html" class="nav-link" id="home-link">Home</a>
+    <a href="audit.html" class="nav-link" id="audit-link">Audits</a>
+    <a href="strategies.html" class="nav-link" id="strategies-link">Strategies</a>
+    <a href="analytics.html" class="nav-link" id="analytics-link">Analytics</a>
+    <a href="contact.html" class="nav-link" id="contact-link">Contact</a>
+  </div>
+</nav>
+</header>
+
+<section class="contact">
+  <h2>Contact Me</h2>
+  
+  <div class="contact-info">
+    <p>Email: <a href="mailto:juanielle.business@gmail.com">juanielle.business@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/juaniellestone" target="_blank">linkedin.com/in/juaniellestone</a></p>
+    <p>Location: Dayton, Ohio, United States (Willing to Relocate)</p>
+  </div>
+
+<form class="contact-form" action="mailto:juanielle.business@gmail.com" method="post" enctype="text/plain">
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+  <button type="submit" class="btn">Send Message</button>
+</form>
+    <p class="contact-tagline">Let’s connect to discuss marketing strategy, collaborations, or internships.</p>
+</section>
+
+<footer>
+  <p>© 2026 Juanielle Stone | Portfolio website built by me using HTML & CSS & VSCode</p>
+</footer>
+
+<script>
+  const page = window.location.pathname.split("/").pop();
+  if(page.includes("index")) document.getElementById("home-link").classList.add("active");
+  if(page.includes("audit")) document.getElementById("audit-link").classList.add("active");
+  if(page.includes("strategies")) document.getElementById("strategies-link").classList.add("active");
+  if(page.includes("analytics")) document.getElementById("analytics-link").classList.add("active");
+  if(page.includes("contact")) document.getElementById("contact-link").classList.add("active");
+</script>
+
+</body>
+</html>

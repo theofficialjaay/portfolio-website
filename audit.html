@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Audits | Juanielle Stone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<nav>
+  <h1><a href="index.html" class="logo-link">JS.</a></h1>
+  <div>
+    <a href="index.html" class="nav-link" id="home-link">Home</a>
+    <a href="audit.html" class="nav-link" id="audit-link">Audits</a>
+    <a href="strategies.html" class="nav-link" id="strategies-link">Strategies</a>
+    <a href="analytics.html" class="nav-link" id="analytics-link">Analytics</a>
+    <a href="contact.html" class="nav-link" id="contact-link">Contact</a>
+  </div>
+</nav>
+</header>
+
+<section>
+    <h1 class="section-title">Brand Audits</h1>
+    <p>Explore each audit below. Click to read directly or view on LinkedIn.</p>
+
+  <section class="audit-detail">
+    <h2>GAP LinkedIn Audit</h2>
+    <img src="assets/images/gap-screenshot.png" alt="GAP Audit Screenshot" class="card-preview">
+    <p><strong>Challenge:</strong> Low engagement and inconsistent branding.</p>
+    <p><strong>Solution:</strong> Redesigned content calendar, optimized posting times, AI-assisted captions.</p>
+    <p><strong>Results:</strong> Engagement +25%, CTR +18% over 3 months.</p>
+<div class="card">
+  <img src="assets/images/gap-logo.png" alt="GAP Logo" class="card-preview">
+  <h4>GAP LinkedIn Audit</h4>
+  <a href="audit-gap.html" class="btn">View Full Audit</a> <!-- Links to full audit page -->
+    <a href="https://www.linkedin.com/feed/update/...YOUR-LINKEDIN-POST..." target="_blank" class="btn">View Full Blog on LinkedIn</a>
+  </section>
+
+<footer>
+  <p>© 2026 Juanielle Stone | Portfolio website built by me using HTML & CSS & VSCode</p>
+</footer>
+
+<script>
+  const page = window.location.pathname.split("/").pop();
+  if(page.includes("index")) document.getElementById("home-link").classList.add("active");
+  if(page.includes("audit")) document.getElementById("audit-link").classList.add("active");
+  if(page.includes("strategies")) document.getElementById("strategies-link").classList.add("active");
+  if(page.includes("analytics")) document.getElementById("analytics-link").classList.add("active");
+  if(page.includes("contact")) document.getElementById("contact-link").classList.add("active");
+</script>
+
+</body>
+</html>
