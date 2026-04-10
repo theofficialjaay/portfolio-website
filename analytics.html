@@ -41,5 +41,14 @@
   <p>© 2026 Juanielle Stone | Portfolio website built by me using HTML & CSS & VSCode</p>
 </footer>
 
+<script>
+  const page = window.location.pathname.split("/").pop();
+  if(page.includes("index")) document.getElementById("home-link").classList.add("active");
+  if(page.includes("audit")) document.getElementById("audit-link").classList.add("active");
+  if(page.includes("strategies")) document.getElementById("strategies-link").classList.add("active");
+  if(page.includes("analytics")) document.getElementById("analytics-link").classList.add("active");
+  if(page.includes("contact")) document.getElementById("contact-link").classList.add("active");
+</script>
+
 </body>
 </html>
