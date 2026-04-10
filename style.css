@@ -118,6 +118,18 @@ nav a:hover {
     background: #ff6f91;
 }
 
+.back-btn {
+  margin: 20px 50px;
+  background: transparent;
+  color: #111;
+  border: 2px solid #111;
+}
+
+.back-btn:hover {
+  background: #111;
+  color: white;
+}
+
 /* --- SECTIONS --- */
 section, .about, .preview, .content, .posts {
     padding: 60px 50px;

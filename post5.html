@@ -13,8 +13,8 @@
     <!-- Add your nav if you want -->
   </header>
 
-<a href="audit.html" class="btn">← Back to All Audits</a>
-
+  <button onclick="goBack()" class="btn back-btn">← Back</button>
+  
   <main>
     <section class="post-content">
       <h2>@Gap on LinkedIn: Professional Storytelling with a Modern Twist</h2>
@@ -33,6 +33,12 @@
 <footer>
   <p>© 2026 Juanielle Stone | Portfolio website built by me using HTML & CSS & VSCode</p>
 </footer>
+
+<script>
+function goBack() {
+  window.history.back();
+}
+</script>
 
 </body>
 </html>
